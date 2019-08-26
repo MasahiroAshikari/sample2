@@ -1,0 +1,272 @@
+
+.txtl { font-size: 28px; font-weight: 600; }
+
+.txtm { font-size: 20px; font-weight: 600; }
+
+.txts { font-size: 16px; font-weight: 600; }
+
+.txtxs { font-size: 14px; font-weight: 300; }
+
+
+/****************************************************************/
+/*スマホ                                                        */
+/****************************************************************/
+
+@media screen and (max-width:768px){	
+.txtl { font-size: 18px; font-weight: 600;}
+.txtm { font-size: 15px; font-weight: 600;}
+.txts { font-size: 12px; font-weight: 600;}
+.txtxs { font-size: 12px; font-weight: 300; letter-spacing: 0;}
+.br-pc{ display:none;}
+.br-sp{ display:block;}
+
+/*header*/
+
+header{
+	height:60px;
+}
+
+.header-bottom{
+	height:60px;
+}
+
+.icon{
+	width:90px;
+}
+
+.subtitle{
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.subtitle p{
+	font-weight:300;
+}
+
+.headerpc{
+	display:none;
+}
+
+.headersp{
+	display:block;
+}
+
+/*vision*/
+.vision{
+	height:300px;
+}
+
+.vision-content{
+	padding-top:40px;
+}
+
+/*about*/
+.circle{
+	width:60px;
+	height:60px;
+	top:-30px;
+}
+
+.circle p{
+	line-height:60px;
+	font-size:15px;
+	}
+	
+.yellowside{
+	width:95%;
+	max-width:calc(100%-20px);
+}
+
+.box-element{
+	margin:0;
+}
+
+.box-element p{
+	font-size:10px;
+}
+
+ .box-element img{
+	max-width:auto;
+	max-height:20;
+}
+
+.aboutsecond .container{
+	max-width:initial;
+}
+
+.aboutsecond-box-element{
+	margin-bottom:10px;
+	width:100%;
+}
+
+.learning .container{
+	padding:0 50px;
+}
+.learning-box {
+	padding:5px;
+}
+
+.learning-box img{
+	width:120px;
+}
+
+.merit-title h2{
+	font-size:20px;
+}
+
+.merit .container{
+	max-width:initial;
+}
+
+.merit .container .row .txts{
+	text-align:left;
+	padding:0 30px;
+}
+
+.supportbox{
+	padding:10px;
+}
+
+.supportbox h3{
+	font-size:20px;
+	padding-bottom:0;
+}
+
+.merit .container{
+	margin:0;
+}
+
+.learnfromfreelancer,.learnfromprojects,.actuallyfree{
+	height:120px;
+}
+
+.teacher .container{
+	max-width:initial;
+}
+
+.teacher-detail{
+	padding:30px 10px 20px 10px;
+}
+
+.teacher-element img{
+	width:120px;
+}
+
+.qacircle{
+	width:60px;
+	height:60px;
+}
+
+.qacircle p{
+	line-height:60px;
+}
+
+.whiteside::before{
+	border-top:3px solid white;
+	border-left:3px solid white;
+}
+
+.whiteside::after{
+	border-bottom:3px solid white;
+	border-right:3px solid white;
+}
+
+.answer .container{
+	max-width:initial;
+}
+
+.class .container{
+	max-width:initial;
+}
+
+.class-learning-box{
+	margin-bottom:20px;
+}
+
+.specialboxsp{
+	display:block;
+	border:2px solid white;
+	padding:20px;
+}
+.specialboxsp-elements{
+	padding:20px 0;
+}
+
+.specialbox-elementsp-left{
+	width:30%;
+	padding:0;
+}
+
+.specialbox-elementsp-left p{
+	margin:0 auto;
+}
+
+.specialbox-elementsp-right p{
+	text-align:left;
+	height:60px;
+	color:white;
+}
+
+.circle2{
+	width:60px;
+	height:60px;
+	line-height:60px;
+	font-size:12px;
+	border-radius:50%;
+	background-color:white;
+}
+
+.specialboxpc{
+	display:none;
+}
+
+.flow{
+	padding-bottom:40px;
+}
+
+.flowboxpc, .flow-top-img{
+	display:none;
+}
+
+.flowboxsp{
+	display:block;
+}
+
+.bankok{
+	padding:40px;
+	background-image: url(isara-sample-img/bangkokbgsp.jpg);
+}
+
+.bankok h2{
+	text-align:center;
+	font-size:25px;
+}
+
+.contactform p{
+	font-size:12px;
+	font-weight:600;
+}
+
+.form{
+	width:90%;
+}
+
+}
+/****************************************************************/
+/*タブレット                                                    */
+/****************************************************************/
+
+@media only screen and (min-width:768px) and (max-width:1190px){
+	.txtl { font-size: 24px; font-weight: 600; }
+	.txtm { font-size: 16px; font-weight: 600; }
+	.txts { font-size: 14px; font-weight: 600; }
+	.txtxs{ font-size: 12px; font-weight: 300; letter-spacing: 0; }
+	.container {width: auto;}
+	.br-pc{display:block;}
+	.answer{ max-width:calc(100% - 40px); margin:0 auto; }
+	.class .container{ padding:30px 10%; }
+	.flowline{ width: calc(100% - 300px); }
+	.bangkok{ padding: 40px; }
+}
+

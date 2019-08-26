@@ -1,0 +1,843 @@
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic Pro', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*ここから*/
+
+header{
+	height:75px;
+	width:100%;
+	position: fixed;
+	z-index: 10;
+	background-color:white;
+}
+
+.title{
+	margin:0 auto;
+	max-width:1170px;
+	position:relative;
+	padding:20px 0;
+	height:75px;
+}
+
+.icon{
+	width:128px;
+	margin-top:-5px;
+}
+
+.subtitle{
+	display:inline-block;
+	position:relative;
+	top:8px;
+}
+
+.subtitle p{
+	font-weight:600;
+}
+
+.headerpc{
+	position:absolute;
+	right:10px;
+	top:15px;
+	display:inline-block;
+	background-color:#da6b64;
+	border-radius:25px;
+	color:white;
+	padding:10px 40px 0 40px;
+}
+
+.headersp{
+	display:none;
+	background-color:#da6b64;
+	color:white;
+	position:absolute;
+	right:0;
+	top:0;
+	width:75px;
+	height:60px;
+	text-align:center;
+	padding:10px;
+}
+
+.headersp img{
+	width:20px;
+}
+
+.header-bottom{
+	.height:60px;
+}
+
+/*****************************************/
+/*vision*/
+/*****************************************/
+
+.vision{
+	height:500px;
+	text-align:center;
+	background-image:url(isara-sample-img/main.jpg);
+	background-position:center;
+	background-size:cover;
+}
+
+.vision-icon{
+	height:100px;
+}
+
+.vision-content{
+	padding-top:110px;
+}
+
+/*****************************************/
+/*conversion*/
+/*****************************************/
+
+.conversion{
+	text-align:center;
+	background-color:#ebb94d;
+	color:white;
+	padding:40px;
+}
+
+.contact{
+	padding:20px 0;
+	margin:0 auto;
+	background-color:#da6b64;
+	width:80%;
+	border-radius:50px;
+	max-width:1170px;
+}
+
+.contact p{
+	margin-bottom:0;
+}
+
+.tw-btn, .fb-btn, .sh-btn{
+	display:inline-block;
+	border-radius:3px;
+	padding:0 4px;
+}
+
+.share-btn p{
+	display:inline-block;
+	margin:0;
+}
+
+.tw-btn{
+	background-color:#0091E7;
+}
+.tw-btn:hover{
+	background-color:#0000cd;
+}
+.fb-btn{
+	background-color:#4060B8;
+}
+.fb-btn:hover{
+	background-color:#191970;
+}
+.sh-btn{
+	background-color:#4060B8;
+}
+.sh-btn:hover{
+	background-color:#191970;
+}
+
+/*****************************************/
+/*introduction*/
+/*****************************************/
+
+.introduction{
+	text-align:center;
+	background-image:url(isara-sample-img/introbottom.jpg);
+	background-size:cover;
+	background-position:center;
+	padding:40px 0 140px 0;
+}
+
+.br-sp{
+	display:none;
+}
+
+.yellowside{
+	padding:30px 50px;
+	position:relative;
+	width:860px;
+	max-width: calc(100% - 40px);
+	margin:0 auto;
+}
+
+.intro-message{
+	margin-top:40px;
+}
+
+.intro-message span{
+	border-bottom:5px solid #ebb94d;
+}
+
+.intro-message p{
+	margin-bottom:30px;
+	font-weight:300;
+}
+
+.yellowside::before,.yellowside::after{
+	position:absolute;
+	width:50px;
+	height:50px;
+	content:"";
+}
+
+.yellowside::before{
+	top:0;
+	left:0;
+	border-top:4px solid #ebb94d;
+	border-left:4px solid #ebb94d;
+}
+
+.yellowside::after{
+	bottom:0;
+	right:0;
+	border-bottom:4px solid #ebb94d;
+	border-right:4px solid #ebb94d;
+}
+
+/*****************************************/
+/*about*/
+/*****************************************/
+
+.circle{
+	height:80px;
+	width:80px;
+	border-radius:50%;
+	background-color:#ebb94d;
+	text-align:center;
+	margin:0 auto;
+	color:white;
+	position:relative;
+	top:-40px;
+}
+
+.circle p{
+	line-height:80px;
+}
+
+.about{
+	background-color: #FFF6DD;
+	text-align: center;
+	padding-bottom:60px;
+}
+
+.about-title{
+	margin:0 auto;
+	border-sizing:border-box;
+}
+
+.aboutbox{
+	border:2px solid #ebb94d;
+	background-color: white;
+	border-radius:5px;
+	padding:10px 20px;
+}
+
+.box-element{
+	display: inline-block;
+	margin-right:15px;
+}
+
+/*****************************************/
+/*aboutsecond*/
+/*****************************************/
+
+.aboutsecond{
+	background-image:url(isara-sample-img/aboutsecondbg.jpg);
+	background-size:cover;
+	background-position:center;
+	text-align:center;
+	padding:40px 0;
+	margin:0 auto;
+}
+
+.aboutsecond-title{
+	color:white;
+	margin-bottom:20px;
+}
+
+.aboutsecond-title h2{
+	margin-bottom:20px;
+}
+
+.aboutsecond-box-element{
+	background-color:white;
+	padding:20px 20px;
+	border-radius:5px;
+	width:100%;
+}
+
+.aboutsecond-box-element:nth-of-type(2){
+	margin:0 1.5%;
+}
+
+.color-orange{
+	color:#ebb94d;
+	border-radius:5px;
+}
+
+.background-orange{
+	background-color:#ebb94d;
+	color:white;
+	border-radius:5px;
+}
+
+/*****************************************/
+/*aboutthird*/
+/*****************************************/
+
+.aboutthird, .classbottom{
+	text-align:center;
+	background-color:#006BAE;
+	color:white;
+	padding-top:40px;
+	padding-bottom:20px;
+}
+/*****************************************/
+/*learning*/
+/*****************************************/
+
+.learning{
+	text-align: center;
+	margin:0 auto;
+	padding-top:60px;
+}
+
+.learning-title p{
+	margin:40px 0;
+}
+
+.learning .container{
+	width:860px;
+	max-width:calc(100% - 40px);
+}
+
+.learning-box img{
+	width:180px;
+	max-width:100%;
+}
+
+.learning-main p{
+	padding-top:40px;
+}
+
+/*****************************************/
+/*merit*/
+/*****************************************/
+
+.merit{
+	background-color: #FFF6DD;
+	text-align:center;
+	padding-top:20px;
+}
+
+.merit-title{
+	margin-bottom:40px;
+}
+
+.meritbox{
+	padding-bottom:40px;
+}
+
+.learnfromfreelancer{
+	height:180px;
+	background-image: url(isara-sample-img/learnfromfreelancer.jpg);
+	background-size:cover;
+	background-position: center;
+}
+
+.learnfromprojects{
+	height:180px;
+	background-image: url(isara-sample-img/learnfromprojects.jpg);
+	background-size:cover;
+	background-position: center;
+}
+
+.actuallyfree{
+	height:180px;
+	background-image: url(isara-sample-img/actuallyfree.jpg);
+	background-size:cover;
+	background-position: center;
+}
+
+.supportbox{
+	padding:40px;
+	border:2px solid #ebb94d;
+	background-color:white;
+	border-radius:5px;
+}
+
+.supportbox h3{
+	padding-bottom:20px;
+}
+
+.merit-under{
+	padding:40px 60px;
+}
+
+/*****************************************/
+/*teacher*/
+/*****************************************/
+
+.teacher{
+	padding:60px 0;
+	color:white;
+	background-image: url(isara-sample-img/teacherbg.jpg);
+	background-size: cover;
+	background-position: center;
+	text-align:center;
+}
+
+.teacher-detail{
+	border:2px solid white;
+}
+
+.fa-address-card{
+	display:inline-block;
+}
+
+.teacher-element img{
+	position:relative;
+	top:30px;
+}
+
+.teacher-detail{
+	padding:40px;
+}
+
+/*****************************************/
+/*why*/
+/*****************************************/
+
+.why{
+	text-align: center;
+	color:white;
+	background-color: #EBB94D;
+	position:relative;
+	padding:20px;
+}
+
+.why-title{
+	position:relative;
+	margin:10px auto;
+	max-width:860px;
+	padding:20px 40px;
+}
+
+.qacircle{
+	background-color: white;
+	border-radius:50%;
+	width:80px;
+	height:80px;
+	margin:0 auto;
+	text-align: center;
+}
+
+.qacircle p{
+	line-height:80px;
+}
+
+.whiteside::before, .whiteside::after{
+	position:absolute;
+	width:50px;
+	height:50px;
+	content:"";
+}
+
+.whiteside::before{
+	top:0;
+	left:0;
+	border-top:5px solid white;
+	border-left:5px solid white;
+}
+
+.whiteside::after{
+	bottom:0;
+	right:0;
+	border-bottom:5px solid white;
+	border-right:5px solid white;
+}
+
+.triangle{
+	border-top:25px solid #EBB94D;
+	border-left:25px solid transparent;
+	border-right:25px solid transparent;
+
+	width:0;
+	height:0;
+}
+
+/*****************************************/
+/*answer*/
+/*****************************************/
+
+.answer{
+	text-align:center;
+	padding-top:40px;
+}
+
+.answerbox{
+	margin:10px auto;
+
+}
+
+.answerbox img{
+	width:100%;
+	height:auto;
+	display:block;
+	border:4px solid #EBB94D;
+}
+
+.answerbox-message{
+	text-align:left;
+}
+
+.answer span{
+	text-decoration: underline;
+}
+
+/*****************************************/
+/*class*/
+/*****************************************/
+
+.class{
+	text-align:center;
+	background-image: url(isara-sample-img/classbg.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.class-title{
+	color:white;
+	padding-bottom:30px;
+}
+
+.class-learning-box{
+	border-radius: 5px;
+	margin:0 2px;
+	border:2px solid #006BAE;
+}
+
+.class-learning-box p{
+	margin:0;
+	padding:10px 20px;
+}
+
+.class-learning-boxtop{
+	color:white;
+	background-color: #006BAE;
+}
+
+.class-learning-boxel p{
+	border-bottom:2px solid  #E5E5E5;
+	background-color: white;
+}
+/*****************************************/
+/*flow*/
+/*****************************************/
+
+.flow{
+	text-align:center;
+}
+
+.flow h2{
+	padding:40px 0;
+}
+
+.flow-five{
+	width:90%;
+	max-width:1000px;
+}
+
+.flowbox-top{
+	padding-top:40px;
+	padding-bottom:20px;
+}
+
+.flowbox{
+	background-color:#fffacd;
+	border-radius:10px;
+	padding:15px 35px;
+	width:1170px;
+	margin:0 auto;
+	max-width:calc(100% - 40px);
+}
+
+.flowbox-left{
+	padding: 20px;
+	width:200px;
+	float:left;
+}
+
+.flowbox:nth-child(5) > .flowbox-left{
+	padding-bottom:0;
+}
+
+.flowbox:nth-child(7) > .flowbox-left{
+	padding-top:0;
+	padding-bottom:0;
+}
+
+.flowbox:nth-child(9) > .flowbox-left{
+	padding-top:0;
+}
+
+.flowbox-left img{
+	max-width:100%;
+}
+
+.flowbox-left p{
+	padding-top:15px;
+	margin-bottom:0;
+}
+
+.flowbox-right{
+	text-align:left;
+	padding:20px;
+}
+
+.flowline{
+	margin:0 auto;
+}
+
+.flowboxsp{
+	display:none;
+}
+
+.flow-list{
+	cursor: pointer;
+
+}
+
+.flow-list h4:hover{
+	text-decoration: underline;
+}
+
+.flowboxsp-element{
+	background-color:#fffacd;
+	width:90%;
+	margin:10px auto;
+	border-radius:5px;
+	text-align:left;
+	position:relative;
+}
+
+.flowboxsp-element img{
+	width:50px;
+	display:inline-block;
+	padding:10px;
+	margin:5px;
+}
+
+.flowboxsp-element h4{
+	display:inline-block;
+}
+
+.flowboxsp .fa{
+	position:absolute;
+	top:20px;
+	right:20px;
+}
+
+.flowboxsp-contents{
+	display:none;
+}
+
+/*****************************************/
+/*bankok*/
+/*****************************************/
+
+.bankok{
+	background-image: url(isara-sample-img/bangkokbg.jpg);
+	background-size: cover;
+	background-position: center;
+	color:white;
+	padding:100px;
+}
+
+/*****************************************/
+/*special*/
+/*****************************************/
+
+.special{
+	text-align:center;
+	background-color:#ebb94d;
+	padding:40px 0;
+}
+
+.specialbox{
+	padding:0 20px;
+}
+
+.specialbox-title{
+	width:50%;
+	position:relative;
+	top:40px;
+	margin:0 auto;
+	background-color:#ebb94d;
+}
+
+.specialboxpc{
+	border:2px solid white;
+	padding:20px;
+}
+
+.specialbox-element{
+	width:250px;
+	height:250px;
+	display:inline-block;
+	margin:10px;
+	border-radius: 50%;
+	background-color: white;
+	padding:15px;
+}
+
+.specialboxsp{
+	display:none;
+}
+/*****************************************/
+/*specialdetail*/
+/*****************************************/
+
+.specialdetail{
+	text-align:center;
+	color:white;
+	background-image:url(isara-sample-img/specialdetail.jpg);
+	background-position:;
+	background-size:cover;
+	padding:60px 20px;
+}
+
+.specialdetail-title{
+	position:relative;
+	padding:20px 0;
+	max-width:860px;
+	margin:30px auto;
+}
+
+.specialdetail .txtl{
+	font-size:25px;
+}
+
+.specialdetail .txtm{
+	font-size:15px;
+}
+/*****************************************/
+/*learning*/
+/*****************************************/
+
+.learning-left img{
+	width:180px;
+}
+
+.learning-right{
+	max-width:1028px;
+}
+/*****************************************/
+/*contactform*/
+/*****************************************/
+
+.contactform{
+	background-color: #ebb94d;
+	text-align: center;
+	padding:60px 0;
+}
+
+.contactform h2,.contactform p{
+	padding-bottom:20px;
+}
+
+.form input{
+	border-radius: 5px;
+	display:block;
+	margin:0 10px 10px 10px;
+	height:55px;
+	width:100%;
+}
+.form textarea{
+	border-radius: 5px;
+	display:block;
+	margin:30px 10px;
+	height:100px;
+	width:100%;
+}
+.form{
+	width:80%;
+	margin:0 auto;
+}
+
+.contactbtn input{
+	width:100%;
+	background-color:#da6b64;
+	border-radius: 25px;
+	color:white;
+}
+
+/*****************************************/
+/*question*/
+/*****************************************/
+.questions{
+	text-align: center;
+	padding:60px 0;
+}
+.questions h2{
+	padding-bottom:20px;
+}
+
+.qa-list-item{
+	margin:5px 50px;
+	padding:20px 20px 10px 20px;
+	text-align:left;
+}
+
+.qa-list-item h4{
+	cursor: pointer;
+}
+
+.qa-left{
+	display:inline-block;
+}
+
+.qa-left:hover{
+	text-decoration: underline;
+}
+
+.qa-right{
+	display:inline-block;
+	float:right;
+}
+
+.answer{
+	display: none;
+	text-align: left;
+}
+
+/*****************************************/
+/*footer*/
+/*****************************************/
+footer{
+	text-align:center;
+	background-color: #ECECEC;
+	padding-top:40px;
+}
